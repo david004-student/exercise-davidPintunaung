@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Parse JSON Array</h2>
+    <p>Data yang ditulis dengan array JSON akan diurai menjadi array JavaScript</p>
+    <hr>
+    <p id="demo3"></p>
+    
+    <script>
+        const text = '[ "David Pintunaung", "Brevy Mahagia", "Jonathan Derren", "Rivan Manoppo"]';
+
+        const myArr = JSON.parse(text);
+
+        console.log(myArr);
+
+        document.getElementById("demo3").innerHTML = "My name is "+myArr[0];
+    </script>
+</body>
+</html>
